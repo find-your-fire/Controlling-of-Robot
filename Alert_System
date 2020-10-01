@@ -13,6 +13,7 @@ try:
   while True:
     if(GPIO.input(Flame_input)):
       GPIO.output(Buz,GPIO.HIGH)
+      print ("FLAME DETECTED")
     else:
       GPIO.output(Buz,GPIO.LOW)
 except KeyboardInterrupt:
